@@ -244,6 +244,13 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
+/* Стил за линковете в портфолиото */
+.portfolio-item a {
+    text-decoration: none; /* Премахва долната черта на линка */
+    color: inherit; /* Кара текста да наследи цвета си (в случая бял) */
+    display: block; /* Кара линка да заеме цялото пространство на елемента */
+}
+
 /* --- За нас и Контакти --- */
 .about {
     text-align: center;
@@ -270,7 +277,7 @@ footer {
 
 /* --- Стил за логото --- */
 .logo img {
-    height: 100px;
+    height: 40px;
     width: auto;
     display: block;
 }
