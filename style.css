@@ -1,6 +1,5 @@
 /* --- Глобални настройки --- */
 :root {
-    /* ПРОМЯНА: Нова светла цветова палитра */
     --primary-color: #008080; /* Тъмно зелен/Синьо-зелен (Teal) - за акценти и бутони */
     --secondary-color: #006666; /* По-тъмен нюанс на основния цвят за hover ефекти */
     --light-bg: #F0F5F1;  /* Много светло, млечно зелено за основен фон */
@@ -22,8 +21,8 @@ html {
 
 body {
     font-family: var(--font-family);
-    background-color: var(--light-bg); /* ПРОМЯНА: Нов фон */
-    color: var(--text-color);           /* ПРОМЯНА: Нов цвят на текста */
+    background-color: var(--light-bg);
+    color: var(--text-color);
     line-height: 1.7;
 }
 
@@ -61,10 +60,9 @@ section {
 
 /* --- Навигация --- */
 header {
-    /* ПРОМЯНА: Светъл фон на навигацията */
     background-color: rgba(255, 255, 255, 0.8); 
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e0e0e0; /* ПРОМЯНА: Светла разделителна линия */
+    border-bottom: 1px solid #e0e0e0;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -74,13 +72,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    padding: 15px 0;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--heading-color);
+.logo a {
+    display: flex; /* Helps with vertical alignment */
+    align-items: center;
 }
 
 nav ul {
@@ -103,7 +100,7 @@ nav ul li a:hover {
 
 .nav-cta {
     background: var(--primary-color);
-    color: #ffffff; /* ПРОМЯНА: Бял текст на бутона за по-добър контраст */
+    color: #ffffff;
     border-radius: 5px;
     padding: 10px 20px !important;
     margin-left: 15px;
@@ -120,13 +117,12 @@ nav ul li a:hover {
     padding-top: 200px;
     padding-bottom: 150px;
     text-align: center;
-    background: var(--light-bg); /* ПРОМЯНА: Фон */
+    background: var(--light-bg);
 }
 
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    /* ПРОМЯНА: Премахнат е градиентният текст, за да има добър контраст. */
     color: var(--heading-color); 
     margin-bottom: 20px;
 }
@@ -136,7 +132,7 @@ nav ul li a:hover {
     max-width: 750px;
     margin: 0 auto 40px;
     font-weight: 300;
-    color: #555; /* ПРОМЯНА: Малко по-светъл текст за подзаглавието */
+    color: #555;
 }
 
 .cta-button {
@@ -156,7 +152,7 @@ nav ul li a:hover {
 .cta-button:hover {
     background-color: var(--secondary-color);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 128, 128, 0.2); /* ПРОМЯНА: Сянката е съобразена с новия цвят */
+    box-shadow: 0 5px 15px rgba(0, 128, 128, 0.2);
 }
 
 
@@ -170,7 +166,7 @@ nav ul li a:hover {
     background-color: var(--card-bg);
     padding: 40px;
     border-radius: 10px;
-    border: 1px solid #e0e0e0; /* ПРОМЯНА: Светла рамка */
+    border: 1px solid #e0e0e0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -192,7 +188,7 @@ nav ul li a:hover {
 
 /* --- Портфолио --- */
 .portfolio {
-    background-color: #ffffff; /* ПРОМЯНА: Чисто бял фон за тази секция, за да се отличи */
+    background-color: #ffffff;
 }
 .portfolio-grid {
     display: grid;
@@ -247,14 +243,14 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 40px 0;
-    border-top: 1px solid #e0e0e0; /* ПРОМЯНА: Светла линия */
+    border-top: 1px solid #e0e0e0;
     margin-top: 60px;
-    background: #e9edea; /* ПРОМЯНА: Малко по-тъмен нюанс на зеленото за завършек */
+    background: #e9edea;
 }
 
 /* --- Стил за логото --- */
 .logo img {
-    height: 4.5vh; 
+    height: 40px; /* ПРОМЕНЕТЕ ТАЗИ СТОЙНОСТ, ЗА ДА НАГЛАСИТЕ РАЗМЕРА */
     width: auto;  
     display: block; 
 }
