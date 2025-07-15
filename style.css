@@ -1,0 +1,269 @@
+/* --- Глобални настройки --- */
+:root {
+    --primary-color: #00BFFF; /* Deep Sky Blue - технологичен и ярък */
+    --secondary-color: #8A2BE2; /* Blue Violet - креативен и мистериозен */
+    --dark-bg: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* --- Навигация --- */
+header {
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #2a2a2a;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.nav-cta {
+    background: var(--primary-color);
+    color: var(--heading-color);
+    border-radius: 5px;
+    padding: 10px 20px !important;
+    margin-left: 15px;
+    transition: background-color 0.3s;
+}
+.nav-cta:hover {
+    background: var(--secondary-color);
+    color: var(--heading-color);
+}
+
+
+/* --- Hero Section --- */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    text-align: center;
+    background: var(--dark-bg);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+}
+
+
+/* --- Услуги --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.service-card {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+}
+.service-icon {
+    width: 50px;
+    height: 50px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* --- Портфолио --- */
+.portfolio {
+    background-color: var(--dark-bg);
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(18, 18, 18, 0.9), transparent);
+    padding: 40px 20px 20px;
+    color: var(--heading-color);
+    transition: opacity 0.4s ease;
+}
+.overlay h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* --- За нас и Контакти --- */
+.about, .contact {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 60px;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #2a2a2a;
+    margin-top: 60px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Simple responsive for now, can be replaced with a burger menu JS */
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+}
