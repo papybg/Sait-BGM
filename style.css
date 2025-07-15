@@ -60,7 +60,7 @@ section {
 
 /* --- Навигация --- */
 header {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #e0e0e0;
     position: fixed;
@@ -76,7 +76,7 @@ nav {
 }
 
 .logo a {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -84,8 +84,8 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0; /* НОВО: Нулиране на margin */
-    padding: 0; /* НОВО: Нулиране на padding */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -94,7 +94,7 @@ nav ul li a {
     padding: 10px 15px;
     transition: color 0.3s ease;
     font-weight: 400;
-    display: block; /* НОВО: За по-лесно натискане */
+    display: block;
 }
 
 nav ul li a:hover {
@@ -113,9 +113,8 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* НОВО: Стил за хамбургер бутона */
 #hamburger-btn {
-    display: none; /* Скрит по подразбиране на десктоп */
+    display: none;
     background: none;
     border: none;
     cursor: pointer;
@@ -144,7 +143,7 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: var(--heading-color); 
+    color: var(--heading-color);
     margin-bottom: 20px;
 }
 
@@ -271,13 +270,13 @@ footer {
 
 /* --- Стил за логото --- */
 .logo img {
-    height: 40px; 
-    width: auto;  
-    display: block; 
+    height: 40px;
+    width: auto;
+    display: block;
 }
 
 
-/* ПРОМЯНА: Цялата секция за Responsive Design е обновена */
+/* --- Responsive Design --- */
 @media (max-width: 768px) {
     .services-grid, .portfolio-grid {
         grid-template-columns: 1fr;
@@ -293,7 +292,7 @@ footer {
     
     /* Стил за мобилната навигация */
     #hamburger-btn {
-        display: block; /* Показваме бутона на мобилни устройства */
+        display: block;
     }
 
     nav ul {
@@ -303,7 +302,7 @@ footer {
         align-items: center;
         position: fixed;
         top: 0;
-        right: -100%; /* Скриваме менюто извън екрана */
+        right: -100%;
         width: 100%;
         height: 100vh;
         background-color: rgba(240, 245, 241, 0.98);
@@ -313,7 +312,7 @@ footer {
     }
 
     nav ul.nav-active {
-        right: 0; /* Показваме менюто като го местим на позиция 0 */
+        right: 0;
     }
 
     nav ul li {
