@@ -1,11 +1,11 @@
 /* --- Глобални настройки --- */
 :root {
-    --primary-color: #008080; /* Тъмно зелен/Синьо-зелен (Teal) - за акценти и бутони */
-    --secondary-color: #006666; /* По-тъмен нюанс на основния цвят за hover ефекти */
-    --light-bg: #F0F5F1;  /* Много светло, млечно зелено за основен фон */
-    --card-bg: #FFFFFF;      /* Чисто бяло за картите, за да изпъкват */
-    --text-color: #333333;   /* Тъмно сиво за основен текст за силен контраст */
-    --heading-color: #2F4F4F; /* Тъмно сиво (Dark Slate Gray) за заглавия */
+    --primary-color: #008080;
+    --secondary-color: #006666;
+    --light-bg: #F0F5F1;
+    --card-bg: #FFFFFF;
+    --text-color: #333333;
+    --heading-color: #2F4F4F;
     --font-family: 'Poppins', sans-serif;
 }
 
@@ -108,6 +108,7 @@ nav ul li a:hover {
     padding: 10px 20px !important;
     margin-left: 15px;
 }
+
 .nav-cta:hover {
     background: var(--secondary-color);
     color: #ffffff;
@@ -130,7 +131,6 @@ nav ul li a:hover {
     margin: 5px 0;
     transition: all 0.3s ease-in-out;
 }
-
 
 /* --- Hero Section --- */
 .hero {
@@ -175,13 +175,13 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 128, 128, 0.2);
 }
 
-
 /* --- Услуги --- */
 .services-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
+
 .service-card {
     background-color: var(--card-bg);
     padding: 40px;
@@ -194,12 +194,14 @@ nav ul li a:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.07);
 }
+
 .service-icon {
     width: 50px;
     height: 50px;
     color: var(--primary-color);
     margin-bottom: 20px;
 }
+
 .service-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
@@ -210,24 +212,29 @@ nav ul li a:hover {
 .portfolio {
     background-color: #ffffff;
 }
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+
 .portfolio-item {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
 }
+
 .portfolio-item img {
     width: 100%;
     display: block;
     transition: transform 0.4s ease;
 }
+
 .portfolio-item:hover img {
     transform: scale(1.1);
 }
+
 .overlay {
     position: absolute;
     bottom: 0;
@@ -238,17 +245,17 @@ nav ul li a:hover {
     color: #ffffff;
     transition: opacity 0.4s ease;
 }
+
 .overlay h3 {
     font-size: 1.3rem;
     font-weight: 600;
     color: #ffffff;
 }
 
-/* Стил за линковете в портфолиото */
 .portfolio-item a {
-    text-decoration: none; /* Премахва долната черта на линка */
-    color: inherit; /* Кара текста да наследи цвета си (в случая бял) */
-    display: block; /* Кара линка да заеме цялото пространство на елемента */
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 /* --- За нас и Контакти --- */
@@ -257,6 +264,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
 }
+
 .contact {
     background-color: var(--card-bg);
     text-align: center;
@@ -282,7 +290,6 @@ footer {
     display: block;
 }
 
-
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
     .services-grid, .portfolio-grid {
@@ -297,7 +304,6 @@ footer {
         font-size: 2.2rem;
     }
     
-    /* Стил за мобилната навигация */
     #hamburger-btn {
         display: block;
     }
@@ -335,7 +341,6 @@ footer {
         padding: 15px 30px !important;
     }
     
-    /* Анимация на хамбургер иконата в "X" */
     #hamburger-btn.is-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
