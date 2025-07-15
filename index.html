@@ -1,4 +1,19 @@
-<header>
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGM design Ltd. - Иновативни 3D и AI Решения</title>
+    <meta name="description" content="BGM design Ltd. специализира в предоставянето на професионални 3D услуги и разработка на персонализирани детски игри с изкуствен интелект.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
         <nav class="container">
             <div class="logo">
                 <a href="#">
@@ -17,25 +32,111 @@
                 <span class="bar"></span>
             </button>
         </nav>
-   <script>
-    // Намираме нужните елементи в HTML
-    const hamburgerBtn = document.getElementById('hamburger-btn');
-    const navLinks = document.getElementById('nav-links');
+    </header>
 
-    // Добавяме "слушател" за клик върху бутона
-    hamburgerBtn.addEventListener('click', () => {
-        // При клик, добавяме/премахваме клас 'nav-active' на навигацията
-        navLinks.classList.toggle('nav-active');
-        // Добавяме/премахваме клас и на самия бутон за "X" анимацията
-        hamburgerBtn.classList.toggle('is-active');
-    });
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Където въображението среща интелекта</h1>
+                <p class="subtitle">Иновативни 3D визуализации и персонализирани AI детски игри, създадени за бъдещето.</p>
+                <a href="#contact" class="cta-button">Обсъдете Вашия Проект</a>
+            </div>
+        </section>
 
-    // НОВО: Затваряне на менюто при клик на линк
-    navLinks.addEventListener('click', () => {
-        if (navLinks.classList.contains('nav-active')) {
-            navLinks.classList.remove('nav-active');
-            hamburgerBtn.classList.remove('is-active');
-        }
-    });
-</script>
-</header>
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Нашите Експертни Услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bounding-box">
+                                <path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2h4V2h-4zM1 1h4v2H1V1zm1 12v2h4v-2H2zM13 1h2v4h-2V1zm-1 12v2h2v-4h-2v2z"/>
+                            </svg>
+                        </div>
+                        <h3>Професионални 3D Услуги</h3>
+                        <p>От фотореалистични визуализации до сложни 3D модели, ние превръщаме Вашите идеи в триизмерна реалност. Идеално за архитектура, продуктов дизайн и маркетинг.</p>
+                    </div>
+                    <div class="service-card">
+                         <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="bi bi-robot">
+                                <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.217l.92.9a.25.25 0 0 0 .183.187l1.871.183a.25.25 0 0 0 .217-.068l.92-.9a.25.25 0 0 0 .068-.217l-.92-.9a.25.25 0 0 0-.183-.187Z"/>
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5Z"/>
+                            </svg>
+                        </div>
+                        <h3>AI Детски Игри и Занимавки</h3>
+                        <p>Разработваме уникални образователни игри, които се адаптират към всяко дете. Използваме AI, за да създадем персонализирано, забавно и безопасно дигитално преживяване.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>Избрани Проекти</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=3D+Архитектурна+Визуализация" alt="3D Визуализация">
+                        <div class="overlay"><h3>Архитектурен Проект "Модерен Дом"</h3></div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://placehold.co/600x400/8A2BE2/ffffff?text=AI+Детска+Игра" alt="AI Детска Игра">
+                         <div class="overlay"><h3>AI Игра "Космическо Приключение"</h3></div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://placehold.co/600x400/00BFFF/ffffff?text=3D+Продуктов+Модел" alt="3D Продукт">
+                         <div class="overlay"><h3>3D Модел на Прототип</h3></div>
+                    </div>
+                     <div class="portfolio-item">
+                        <img src="https://placehold.co/600x400/FFA500/ffffff?text=AI+Обучителна+Платформа" alt="AI Платформа">
+                         <div class="overlay"><h3>Интерактивна AI Занимавка</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Кои сме ние?</h2>
+                <p>BGM design Ltd. е студио, родено от страстта към технологиите и дизайна. Нашият екип обединява артистичната прецизност на 3D артисти с аналитичната мощ на AI разработчици. Нашата мисия е да създаваме дигитални продукти, които не просто изглеждат добре, но и предлагат интелигентни, персонализирани и запомнящи се преживявания за крайния потребител.</p>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Готови ли сте да създадем нещо невероятно?</h2>
+                <p>Свържете се с нас, за да обсъдим как можем да помогнем на Вашия проект.</p>
+                <a href="mailto:office@bgmdesign.bg" class="cta-button">Изпратете ни имейл: office@bgmdesign.bg</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BGM design Ltd. Всички права запазени.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Намираме нужните елементи в HTML
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navLinks = document.getElementById('nav-links');
+    
+        // Добавяме "слушател" за клик върху бутона
+        hamburgerBtn.addEventListener('click', () => {
+            // При клик, добавяме/премахваме клас 'nav-active' на навигацията
+            navLinks.classList.toggle('nav-active');
+            // Добавяме/премахваме клас и на самия бутон за "X" анимацията
+            hamburgerBtn.classList.toggle('is-active');
+        });
+    
+        // Затваряне на менюто при клик на линк
+        navLinks.addEventListener('click', () => {
+            if (navLinks.classList.contains('nav-active')) {
+                navLinks.classList.remove('nav-active');
+                hamburgerBtn.classList.remove('is-active');
+            }
+        });
+    </script>
+    
+</body>
+</html>
